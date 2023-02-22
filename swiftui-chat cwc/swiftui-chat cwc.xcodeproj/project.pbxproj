@@ -1,0 +1,623 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A50A772287368D1001AF7E7 /* swiftui_chat_cwcApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A50A771287368D1001AF7E7 /* swiftui_chat_cwcApp.swift */; };
+		5A50A774287368D1001AF7E7 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A50A773287368D1001AF7E7 /* RootView.swift */; };
+		5A50A776287368D3001AF7E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A50A775287368D3001AF7E7 /* Assets.xcassets */; };
+		5A50A779287368D3001AF7E7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A50A778287368D3001AF7E7 /* Preview Assets.xcassets */; };
+		5A55FA07287B532B00D16C06 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A55FA06287B532B00D16C06 /* CustomTabBar.swift */; };
+		5AB20486298849B10073143D /* ConversationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB20485298849B10073143D /* ConversationView.swift */; };
+		5AB204892989C0620073143D /* ProfilePicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB204882989C0620073143D /* ProfilePicView.swift */; };
+		5AB2048B298C80BC0073143D /* RoundedCornerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB2048A298C80BC0073143D /* RoundedCornerExtension.swift */; };
+		5AB2048D298F6A360073143D /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB2048C298F6A360073143D /* Chat.swift */; };
+		5AB2048F2992DC9F0073143D /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB2048E2992DC9F0073143D /* ChatViewModel.swift */; };
+		5ACCA27A287F7817009C121D /* TabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACCA279287F7817009C121D /* TabBarButton.swift */; };
+		5ACCA27C2880B468009C121D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5ACCA27B2880B468009C121D /* GoogleService-Info.plist */; };
+		5ACCA27F2880BDAE009C121D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 5ACCA27E2880BDAE009C121D /* FirebaseAuth */; };
+		5ACCA2812880BDAE009C121D /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 5ACCA2802880BDAE009C121D /* FirebaseFirestore */; };
+		5ACCA2832880BDAE009C121D /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 5ACCA2822880BDAE009C121D /* FirebaseFirestoreSwift-Beta */; };
+		5ACCA2852880BDAE009C121D /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 5ACCA2842880BDAE009C121D /* FirebaseStorage */; };
+		5ACCA2872880BDAE009C121D /* FirebaseStorageSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 5ACCA2862880BDAE009C121D /* FirebaseStorageSwift-Beta */; };
+		5ACCA2892881F852009C121D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACCA2882881F852009C121D /* AppDelegate.swift */; };
+		5ACCA28C28870C6A009C121D /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACCA28B28870C6A009C121D /* AuthViewModel.swift */; };
+		5ACCA28F28887953009C121D /* OnboardingContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACCA28E28887953009C121D /* OnboardingContainerView.swift */; };
+		5ACCA2932889BAF6009C121D /* PhoneNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACCA2922889BAF5009C121D /* PhoneNumberView.swift */; };
+		5ACCA2952889BB04009C121D /* VerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACCA2942889BB04009C121D /* VerificationView.swift */; };
+		5ACCA2972889BB14009C121D /* CreateProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACCA2962889BB14009C121D /* CreateProfileView.swift */; };
+		5ACCA2992889BB26009C121D /* SyncContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACCA2982889BB26009C121D /* SyncContactsView.swift */; };
+		5ACCA29B2889C2BD009C121D /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACCA29A2889C2BD009C121D /* WelcomeView.swift */; };
+		5ACCA29D288C6CC6009C121D /* OnboardingButtonStyle .swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACCA29C288C6CC6009C121D /* OnboardingButtonStyle .swift */; };
+		5ACCA2A1288E5593009C121D /* CreateProfileTextfieldStyle .swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACCA2A0288E5593009C121D /* CreateProfileTextfieldStyle .swift */; };
+		5ACCA2A328904A3B009C121D /* ContactsViewModel .swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACCA2A228904A3B009C121D /* ContactsViewModel .swift */; };
+		5ACCA2A528986342009C121D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACCA2A428986342009C121D /* User.swift */; };
+		5ACCA2A728A01EDD009C121D /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACCA2A628A01EDD009C121D /* DatabaseService.swift */; };
+		5ACCA2A9291C4A0F009C121D /* TextHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACCA2A8291C4A0F009C121D /* TextHelper.swift */; };
+		5ACCA2AB29425A4A009C121D /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACCA2AA29425A4A009C121D /* ImagePicker.swift */; };
+		5ACCA2AF297C8CDD009C121D /* ContactsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACCA2AE297C8CDD009C121D /* ContactsListView.swift */; };
+		5ACCA2B1297C8DC0009C121D /* ChatsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACCA2B0297C8DC0009C121D /* ChatsListView.swift */; };
+		5ACCA2B3297F043E009C121D /* ContactRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ACCA2B2297F043E009C121D /* ContactRow.swift */; };
+		5ADEE81F2875DB2900457A5B /* LexendDeca-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5ADEE81C2875DB2900457A5B /* LexendDeca-Bold.ttf */; };
+		5ADEE8202875DB2900457A5B /* LexendDeca-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5ADEE81D2875DB2900457A5B /* LexendDeca-Regular.ttf */; };
+		5ADEE8212875DB2900457A5B /* LexendDeca-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5ADEE81E2875DB2900457A5B /* LexendDeca-SemiBold.ttf */; };
+		5ADEE82428761D7A00457A5B /* Fonts .swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADEE82328761D7A00457A5B /* Fonts .swift */; };
+		5AEE22BD29A59116007C4704 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEE22BC29A59116007C4704 /* DateHelper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5A50A76E287368D0001AF7E7 /* swiftui-chat cwc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swiftui-chat cwc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A50A771287368D1001AF7E7 /* swiftui_chat_cwcApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_chat_cwcApp.swift; sourceTree = "<group>"; };
+		5A50A773287368D1001AF7E7 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		5A50A775287368D3001AF7E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5A50A778287368D3001AF7E7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5A55FA06287B532B00D16C06 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		5AB20485298849B10073143D /* ConversationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationView.swift; sourceTree = "<group>"; };
+		5AB204882989C0620073143D /* ProfilePicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePicView.swift; sourceTree = "<group>"; };
+		5AB2048A298C80BC0073143D /* RoundedCornerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerExtension.swift; sourceTree = "<group>"; };
+		5AB2048C298F6A360073143D /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		5AB2048E2992DC9F0073143D /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		5ACCA279287F7817009C121D /* TabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButton.swift; sourceTree = "<group>"; };
+		5ACCA27B2880B468009C121D /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		5ACCA2882881F852009C121D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5ACCA28A288637CB009C121D /* swiftui-chat cwc.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "swiftui-chat cwc.entitlements"; sourceTree = "<group>"; };
+		5ACCA28B28870C6A009C121D /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		5ACCA28E28887953009C121D /* OnboardingContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerView.swift; sourceTree = "<group>"; };
+		5ACCA2922889BAF5009C121D /* PhoneNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberView.swift; sourceTree = "<group>"; };
+		5ACCA2942889BB04009C121D /* VerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationView.swift; sourceTree = "<group>"; };
+		5ACCA2962889BB14009C121D /* CreateProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileView.swift; sourceTree = "<group>"; };
+		5ACCA2982889BB26009C121D /* SyncContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncContactsView.swift; sourceTree = "<group>"; };
+		5ACCA29A2889C2BD009C121D /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		5ACCA29C288C6CC6009C121D /* OnboardingButtonStyle .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OnboardingButtonStyle .swift"; sourceTree = "<group>"; };
+		5ACCA2A0288E5593009C121D /* CreateProfileTextfieldStyle .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CreateProfileTextfieldStyle .swift"; sourceTree = "<group>"; };
+		5ACCA2A228904A3B009C121D /* ContactsViewModel .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContactsViewModel .swift"; sourceTree = "<group>"; };
+		5ACCA2A428986342009C121D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5ACCA2A628A01EDD009C121D /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
+		5ACCA2A8291C4A0F009C121D /* TextHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextHelper.swift; sourceTree = "<group>"; };
+		5ACCA2AA29425A4A009C121D /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		5ACCA2AE297C8CDD009C121D /* ContactsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsListView.swift; sourceTree = "<group>"; };
+		5ACCA2B0297C8DC0009C121D /* ChatsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsListView.swift; sourceTree = "<group>"; };
+		5ACCA2B2297F043E009C121D /* ContactRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactRow.swift; sourceTree = "<group>"; };
+		5ADEE81C2875DB2900457A5B /* LexendDeca-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LexendDeca-Bold.ttf"; sourceTree = "<group>"; };
+		5ADEE81D2875DB2900457A5B /* LexendDeca-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LexendDeca-Regular.ttf"; sourceTree = "<group>"; };
+		5ADEE81E2875DB2900457A5B /* LexendDeca-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LexendDeca-SemiBold.ttf"; sourceTree = "<group>"; };
+		5ADEE8222875E07B00457A5B /* swiftui-chat-cwc-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "swiftui-chat-cwc-Info.plist"; sourceTree = SOURCE_ROOT; };
+		5ADEE82328761D7A00457A5B /* Fonts .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fonts .swift"; sourceTree = "<group>"; };
+		5AEE22BC29A59116007C4704 /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5A50A76B287368D0001AF7E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ACCA2872880BDAE009C121D /* FirebaseStorageSwift-Beta in Frameworks */,
+				5ACCA2832880BDAE009C121D /* FirebaseFirestoreSwift-Beta in Frameworks */,
+				5ACCA2852880BDAE009C121D /* FirebaseStorage in Frameworks */,
+				5ACCA27F2880BDAE009C121D /* FirebaseAuth in Frameworks */,
+				5ACCA2812880BDAE009C121D /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A50A765287368D0001AF7E7 = {
+			isa = PBXGroup;
+			children = (
+				5A50A770287368D0001AF7E7 /* swiftui-chat cwc */,
+				5A50A76F287368D0001AF7E7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5A50A76F287368D0001AF7E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5A50A76E287368D0001AF7E7 /* swiftui-chat cwc.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A50A770287368D0001AF7E7 /* swiftui-chat cwc */ = {
+			isa = PBXGroup;
+			children = (
+				5ACCA28A288637CB009C121D /* swiftui-chat cwc.entitlements */,
+				5ACCA27B2880B468009C121D /* GoogleService-Info.plist */,
+				5ADEE8222875E07B00457A5B /* swiftui-chat-cwc-Info.plist */,
+				5A50A771287368D1001AF7E7 /* swiftui_chat_cwcApp.swift */,
+				5ACCA2882881F852009C121D /* AppDelegate.swift */,
+				5A50A77F287368ED001AF7E7 /* Views */,
+				5A50A7802873690A001AF7E7 /* ViewModels */,
+				5A50A78128736927001AF7E7 /* Models */,
+				5A50A78228736932001AF7E7 /* Services */,
+				5A50A78328736A99001AF7E7 /* Helpers */,
+				5A50A78428736AA3001AF7E7 /* Fonts */,
+				5A50A775287368D3001AF7E7 /* Assets.xcassets */,
+				5A50A777287368D3001AF7E7 /* Preview Content */,
+			);
+			path = "swiftui-chat cwc";
+			sourceTree = "<group>";
+		};
+		5A50A777287368D3001AF7E7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5A50A778287368D3001AF7E7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5A50A77F287368ED001AF7E7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5A50A773287368D1001AF7E7 /* RootView.swift */,
+				5ACCA28D2888792A009C121D /* Onboarding */,
+				5ACCA2AD297C8C17009C121D /* Chats View */,
+				5ACCA2AC297C8C02009C121D /* Contacts View */,
+				5A55FA05287B52EF00D16C06 /* Custom Tab Bar */,
+				5AB204872989BF840073143D /* Misc */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5A50A7802873690A001AF7E7 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				5ACCA28B28870C6A009C121D /* AuthViewModel.swift */,
+				5ACCA2A228904A3B009C121D /* ContactsViewModel .swift */,
+				5AB2048E2992DC9F0073143D /* ChatViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		5A50A78128736927001AF7E7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5ACCA2A428986342009C121D /* User.swift */,
+				5AB2048C298F6A360073143D /* Chat.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5A50A78228736932001AF7E7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5ACCA2A628A01EDD009C121D /* DatabaseService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5A50A78328736A99001AF7E7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5ADEE82328761D7A00457A5B /* Fonts .swift */,
+				5ACCA29C288C6CC6009C121D /* OnboardingButtonStyle .swift */,
+				5ACCA2A0288E5593009C121D /* CreateProfileTextfieldStyle .swift */,
+				5ACCA2A8291C4A0F009C121D /* TextHelper.swift */,
+				5AB2048A298C80BC0073143D /* RoundedCornerExtension.swift */,
+				5AEE22BC29A59116007C4704 /* DateHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		5A50A78428736AA3001AF7E7 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				5ADEE81C2875DB2900457A5B /* LexendDeca-Bold.ttf */,
+				5ADEE81D2875DB2900457A5B /* LexendDeca-Regular.ttf */,
+				5ADEE81E2875DB2900457A5B /* LexendDeca-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		5A55FA05287B52EF00D16C06 /* Custom Tab Bar */ = {
+			isa = PBXGroup;
+			children = (
+				5A55FA06287B532B00D16C06 /* CustomTabBar.swift */,
+				5ACCA279287F7817009C121D /* TabBarButton.swift */,
+			);
+			path = "Custom Tab Bar";
+			sourceTree = "<group>";
+		};
+		5AB204872989BF840073143D /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				5AB204882989C0620073143D /* ProfilePicView.swift */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		5ACCA28D2888792A009C121D /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				5ACCA28E28887953009C121D /* OnboardingContainerView.swift */,
+				5ACCA29A2889C2BD009C121D /* WelcomeView.swift */,
+				5ACCA2922889BAF5009C121D /* PhoneNumberView.swift */,
+				5ACCA2942889BB04009C121D /* VerificationView.swift */,
+				5ACCA2962889BB14009C121D /* CreateProfileView.swift */,
+				5ACCA2AA29425A4A009C121D /* ImagePicker.swift */,
+				5ACCA2982889BB26009C121D /* SyncContactsView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		5ACCA2AC297C8C02009C121D /* Contacts View */ = {
+			isa = PBXGroup;
+			children = (
+				5ACCA2AE297C8CDD009C121D /* ContactsListView.swift */,
+				5ACCA2B2297F043E009C121D /* ContactRow.swift */,
+			);
+			path = "Contacts View";
+			sourceTree = "<group>";
+		};
+		5ACCA2AD297C8C17009C121D /* Chats View */ = {
+			isa = PBXGroup;
+			children = (
+				5ACCA2B0297C8DC0009C121D /* ChatsListView.swift */,
+				5AB20485298849B10073143D /* ConversationView.swift */,
+			);
+			path = "Chats View";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5A50A76D287368D0001AF7E7 /* swiftui-chat cwc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A50A77C287368D3001AF7E7 /* Build configuration list for PBXNativeTarget "swiftui-chat cwc" */;
+			buildPhases = (
+				5A50A76A287368D0001AF7E7 /* Sources */,
+				5A50A76B287368D0001AF7E7 /* Frameworks */,
+				5A50A76C287368D0001AF7E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "swiftui-chat cwc";
+			packageProductDependencies = (
+				5ACCA27E2880BDAE009C121D /* FirebaseAuth */,
+				5ACCA2802880BDAE009C121D /* FirebaseFirestore */,
+				5ACCA2822880BDAE009C121D /* FirebaseFirestoreSwift-Beta */,
+				5ACCA2842880BDAE009C121D /* FirebaseStorage */,
+				5ACCA2862880BDAE009C121D /* FirebaseStorageSwift-Beta */,
+			);
+			productName = "swiftui-chat cwc";
+			productReference = 5A50A76E287368D0001AF7E7 /* swiftui-chat cwc.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A50A766287368D0001AF7E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					5A50A76D287368D0001AF7E7 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = 5A50A769287368D0001AF7E7 /* Build configuration list for PBXProject "swiftui-chat cwc" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5A50A765287368D0001AF7E7;
+			packageReferences = (
+				5ACCA27D2880BDAE009C121D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 5A50A76F287368D0001AF7E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A50A76D287368D0001AF7E7 /* swiftui-chat cwc */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5A50A76C287368D0001AF7E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A50A779287368D3001AF7E7 /* Preview Assets.xcassets in Resources */,
+				5A50A776287368D3001AF7E7 /* Assets.xcassets in Resources */,
+				5ADEE8212875DB2900457A5B /* LexendDeca-SemiBold.ttf in Resources */,
+				5ADEE8202875DB2900457A5B /* LexendDeca-Regular.ttf in Resources */,
+				5ADEE81F2875DB2900457A5B /* LexendDeca-Bold.ttf in Resources */,
+				5ACCA27C2880B468009C121D /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A50A76A287368D0001AF7E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ACCA2A728A01EDD009C121D /* DatabaseService.swift in Sources */,
+				5ACCA2992889BB26009C121D /* SyncContactsView.swift in Sources */,
+				5ACCA28F28887953009C121D /* OnboardingContainerView.swift in Sources */,
+				5AEE22BD29A59116007C4704 /* DateHelper.swift in Sources */,
+				5ACCA2892881F852009C121D /* AppDelegate.swift in Sources */,
+				5ACCA2A9291C4A0F009C121D /* TextHelper.swift in Sources */,
+				5A55FA07287B532B00D16C06 /* CustomTabBar.swift in Sources */,
+				5A50A774287368D1001AF7E7 /* RootView.swift in Sources */,
+				5ACCA28C28870C6A009C121D /* AuthViewModel.swift in Sources */,
+				5ACCA2B1297C8DC0009C121D /* ChatsListView.swift in Sources */,
+				5ACCA2972889BB14009C121D /* CreateProfileView.swift in Sources */,
+				5ACCA2A528986342009C121D /* User.swift in Sources */,
+				5ACCA29B2889C2BD009C121D /* WelcomeView.swift in Sources */,
+				5ACCA2932889BAF6009C121D /* PhoneNumberView.swift in Sources */,
+				5A50A772287368D1001AF7E7 /* swiftui_chat_cwcApp.swift in Sources */,
+				5ACCA2952889BB04009C121D /* VerificationView.swift in Sources */,
+				5ACCA29D288C6CC6009C121D /* OnboardingButtonStyle .swift in Sources */,
+				5ACCA2B3297F043E009C121D /* ContactRow.swift in Sources */,
+				5ACCA2A1288E5593009C121D /* CreateProfileTextfieldStyle .swift in Sources */,
+				5ACCA2AF297C8CDD009C121D /* ContactsListView.swift in Sources */,
+				5ACCA27A287F7817009C121D /* TabBarButton.swift in Sources */,
+				5ACCA2AB29425A4A009C121D /* ImagePicker.swift in Sources */,
+				5ACCA2A328904A3B009C121D /* ContactsViewModel .swift in Sources */,
+				5AB2048F2992DC9F0073143D /* ChatViewModel.swift in Sources */,
+				5AB2048D298F6A360073143D /* Chat.swift in Sources */,
+				5AB2048B298C80BC0073143D /* RoundedCornerExtension.swift in Sources */,
+				5ADEE82428761D7A00457A5B /* Fonts .swift in Sources */,
+				5AB204892989C0620073143D /* ProfilePicView.swift in Sources */,
+				5AB20486298849B10073143D /* ConversationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5A50A77A287368D3001AF7E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5A50A77B287368D3001AF7E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5A50A77D287368D3001AF7E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "swiftui-chat cwc/swiftui-chat cwc.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"swiftui-chat cwc/Preview Content\"";
+				DEVELOPMENT_TEAM = 3CX8NL8QFA;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "swiftui-chat-cwc-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sandeepdhaliwal.swiftui-chat-cwc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5A50A77E287368D3001AF7E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "swiftui-chat cwc/swiftui-chat cwc.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"swiftui-chat cwc/Preview Content\"";
+				DEVELOPMENT_TEAM = 3CX8NL8QFA;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "swiftui-chat-cwc-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sandeepdhaliwal.swiftui-chat-cwc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5A50A769287368D0001AF7E7 /* Build configuration list for PBXProject "swiftui-chat cwc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A50A77A287368D3001AF7E7 /* Debug */,
+				5A50A77B287368D3001AF7E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A50A77C287368D3001AF7E7 /* Build configuration list for PBXNativeTarget "swiftui-chat cwc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A50A77D287368D3001AF7E7 /* Debug */,
+				5A50A77E287368D3001AF7E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5ACCA27D2880BDAE009C121D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5ACCA27E2880BDAE009C121D /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5ACCA27D2880BDAE009C121D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		5ACCA2802880BDAE009C121D /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5ACCA27D2880BDAE009C121D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		5ACCA2822880BDAE009C121D /* FirebaseFirestoreSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5ACCA27D2880BDAE009C121D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreSwift-Beta";
+		};
+		5ACCA2842880BDAE009C121D /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5ACCA27D2880BDAE009C121D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		5ACCA2862880BDAE009C121D /* FirebaseStorageSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5ACCA27D2880BDAE009C121D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageSwift-Beta";
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 5A50A766287368D0001AF7E7 /* Project object */;
+}
